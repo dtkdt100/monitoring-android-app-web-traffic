@@ -7,7 +7,7 @@ View and edit your android app web traffic without a need to root your device.
  - [Apktool](https://apktool.org/docs/install)
  - Java
  - [uber apk signer](https://github.com/patrickfav/uber-apk-signer)
- - For flutter apps: [reflutter](https://github.com/ptswarm/reFlutter)C:\Users\dolev\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts
+ - For flutter apps: [reflutter](https://github.com/ptswarm/reFlutter)
  - ADB (Optinal)
 
 Note: With rooted phone you can use this tutorial -> https://blog.ropnop.com/configuring-burp-suite-with-android-nougat. The code in this repo will automate the steps in this article.
@@ -30,3 +30,8 @@ In you android phone:
 </details>
 
 ## Step 2 - Patch APK
+
+Run the follwing command: `python patch_apk.py <path_to_apk> <patch_type - 0: java, 1: flutter>`
+Example:  `python patch_apk.py oneto50.apk 1`
+
+Note: make sure the device is connected in debugger mode 
