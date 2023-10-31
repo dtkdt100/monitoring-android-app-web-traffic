@@ -40,6 +40,7 @@ def patch_flutter_app(path_to_apk: str) -> None:
     os.remove('./release.RE.apk')
     os.remove('./release.RE-aligned-debugSigned.apk')
     os.remove('./release.RE-aligned-debugSigned.apk.idsig')
+    shutil.rmtree('./release')
 
 
 def patch_app(path_to_apk: str) -> None:
@@ -52,6 +53,8 @@ def patch_app(path_to_apk: str) -> None:
     os.system('adb install app\\dist\\app-aligned-debugSigned.apk')
     os.remove('./app.apk')
     shutil.rmtree('./app')
+    shutil.rmtree('./release')
+
 
 
 if __name__ == "__main__":
