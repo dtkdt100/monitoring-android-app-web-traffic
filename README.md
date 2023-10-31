@@ -5,8 +5,9 @@ View and edit your android app web traffic without a need to root your device.
 
  - [Burp suite](https://portswigger.net/burp/communitydownload)
  - [Apktool](https://apktool.org/docs/install)
- - keytool (Comes with Android studio and Burp suite)
- - [apksigner, zipalign](https://androidsdkmanager.azurewebsites.net/Buildtools) - use latest version
+ - Java
+ - [uber apk signer](https://github.com/patrickfav/uber-apk-signer)
+ - For flutter apps: [reflutter](https://github.com/ptswarm/reFlutter)C:\Users\dolev\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts
  - ADB (Optinal)
 
 Note: With rooted phone you can use this tutorial -> https://blog.ropnop.com/configuring-burp-suite-with-android-nougat. The code in this repo will automate the steps in this article.
