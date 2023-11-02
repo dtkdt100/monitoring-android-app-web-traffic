@@ -8,7 +8,7 @@ View and edit your android app web traffic without a need to root your device.
  - Java
  - [uber apk signer](https://github.com/patrickfav/uber-apk-signer) - In repo
  - For flutter apps: [reflutter](https://github.com/ptswarm/reFlutter) - In repo
- - ADB (Optinal)
+ - ADB (optional)
 
 Note: With rooted phone you can use this tutorial -> https://blog.ropnop.com/configuring-burp-suite-with-android-nougat. The code in this repo will automate the steps in this article.
 
