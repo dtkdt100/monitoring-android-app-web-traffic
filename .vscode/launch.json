@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["C:\\Users\\dolev\\Downloads\\oneto50.apk", "1"],
+            "args": ["C:\\Users\\dolev\\Downloads\\1to50.apk", "0"],
         }
     ]
 }

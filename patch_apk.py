@@ -5,6 +5,8 @@ import socket
 
 def add_network_security_config(path_to_app: str) -> None:
     path_to_xml = path_to_app + '/res/xml'
+    if not os.path.exists(path_to_xml):
+        os.makedirs(path_to_xml)
     shutil.copyfile('./network_security_config.xml', path_to_xml + '/network_security_config.xml')
 
 def patch_android_manifest(path_to_app: str) -> None:
@@ -53,8 +55,6 @@ def patch_app(path_to_apk: str) -> None:
     os.system('adb install app\\dist\\app-aligned-debugSigned.apk')
     os.remove('./app.apk')
     shutil.rmtree('./app')
-    shutil.rmtree('./release')
-
 
 
 if __name__ == "__main__":
